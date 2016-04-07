@@ -1,0 +1,7 @@
+{
+  "NO_CALLS" 			: "There are no incoming calls.",
+  "INCOMING_CALLS" 		: "Incoming calls:",
+  "SERVER_UNAVAILABLE" 	: "Server is unavailable.",
+  "EXIT" 				: "Exit",
+  "HIDE" 				: "Hide"
+}

@@ -1,0 +1,7 @@
+{ 
+    "name": "incoming",
+    "jsFiles": ["startup.js"],
+    "type": "foreground",
+    "displayName": "Incoming calls",
+    "hasIdle": false
+}
