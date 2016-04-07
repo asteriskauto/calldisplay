@@ -25,8 +25,8 @@ Download server.py from this repo and run it on your Asterisk server (write your
 same => n,System(curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"uid":"${UNIQUEID}", "callgroup":"${CallGroup}", "pickupgroup":"${PickupGroup}", "from":"${CALLERID(num)}", "to":"${EXTEN}"}' http://192.168.1.254:8000/put)  
 
 ;;h-extension  
-exten => h,1,NoOp(END of App)
-same => n,System(curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"uid":"${UNIQUEID}", "callgroup":"${CallGroup}", "pickupgroup":"${PickupGroup}", "from":"${CALLERID(num)}", "to":"${TARGETNO}"}' http://192.168.1.254:8000/del)
+exten => h,1,NoOp(END of App)  
+same => n,System(curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"uid":"${UNIQUEID}", "callgroup":"${CallGroup}", "pickupgroup":"${PickupGroup}", "from":"${CALLERID(num)}", "to":"${TARGETNO}"}' http://192.168.1.254:8000/del)  
 same => n,Hangup()
 
 
