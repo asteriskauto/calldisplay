@@ -27,6 +27,9 @@ same => n,System(curl -i -H "Accept: application/json" -H "Content-Type: applica
 ;;h-extension  
 exten => h,1,NoOp(END of App)  
 same => n,System(curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"uid":"${UNIQUEID}", "callgroup":"${CallGroup}", "pickupgroup":"${PickupGroup}", "from":"${CALLERID(num)}", "to":"${TARGETNO}"}' http://192.168.1.254:8000/del)  
-same => n,Hangup()
+same => n,Hangup()  
+
+##### Video demonstration  
+https://www.youtube.com/watch?v=urHjgg0-cyY&feature=youtu.be
 
 
