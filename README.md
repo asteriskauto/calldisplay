@@ -21,7 +21,7 @@ Download server.py from this repo and run it on your Asterisk server (write your
 
 ##### Insert in your dialplan these settings:  
 
-;;this must be in incoming dialplan
+;;this must be in incoming dialplan  
 same => n,Set(CallGroup=${SIPPEER(${EXTEN},callgroup)})  
 same => n,NoOp(Callgroup = ${CallGroup})  
 same => n,Set(PickupGroup=${SIPPEER(${EXTEN},pickupgroup)})  
