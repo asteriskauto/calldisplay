@@ -11,7 +11,7 @@ callgroup: 1 (here must be real callgroup as your asterisk settings)
 pickupgroup: 1 (here must be real group as your asterisk settings)  
 server: http://servcer-ip:server-port (ex. http://192.168.1.254:8000)  
 prefix: asterisk pickup feature code (ex. *8)  
-language: ru (nowadays onlu 'ru' and 'en' are available)  
+language: ru (nowadays only 'ru' and 'en' are available)  
 
 ## Server Installation:
 
